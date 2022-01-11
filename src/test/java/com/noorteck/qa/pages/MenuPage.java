@@ -7,103 +7,136 @@ import org.openqa.selenium.support.PageFactory;
 import com.noorteck.qa.utils.CommonUI;
 
 public class MenuPage extends CommonUI {
-	
-	@FindBy (id="menu_admin_viewAdminModule")
+
+	@FindBy(id = "menu_admin_viewAdminModule")
 	WebElement adminMenu;
-	
-	
-	@FindBy (id= "menu_admin_Job")
+
+	@FindBy(id = "menu_admin_Job")
 	WebElement jobMenu;
-	
-	@FindBy (id="menu_admin_viewJobTitleList")
+
+	@FindBy(id = "menu_admin_viewJobTitleList")
 	WebElement jobTitleMenu;
-	
-	@FindBy (id="menu_admin_viewSalaryComponentList")
+
+	@FindBy(id = "menu_admin_viewSalaryComponentList")
 	WebElement salaryComponentMenu;
-	
-	@FindBy (id="menu_admin_employmentStatus")
+
+	@FindBy(id = "menu_admin_employmentStatus")
 	WebElement employmentStatusMenu;
-	
-	@FindBy (id="menu_admin_jobCategory")
+
+	@FindBy(id = "menu_admin_jobCategory")
 	WebElement jobCategoryMenu;
-	
-	@FindBy (id="menu_admin_workShift")
+
+	@FindBy(id = "menu_admin_workShift")
 	WebElement workShiftMenu;
-	
-	@FindBy (id="menu_admin_Qualifications")
+
+	@FindBy(id = "menu_admin_Qualifications")
 	WebElement qualificationsMenu;
 
-	@FindBy (id="menu_admin_viewSkills")
+	@FindBy(id = "menu_admin_viewSkills")
 	WebElement skillsMenu;
-	
-	@FindBy (id="menu_admin_viewEducation")
+
+	@FindBy(id = "menu_admin_viewEducation")
 	WebElement educationMenu;
-	
-	@FindBy (id="menu_pim_viewPimModule")
+
+	@FindBy(id = "menu_pim_viewPimModule")
 	WebElement pIMMenu;
-	
-	@FindBy (id="menu_pim_viewEmployeeList")
+
+	@FindBy(id = "menu_pim_viewEmployeeList")
 	WebElement employeeList;
-	
-	@FindBy (id="menu_discipline_defaultDisciplinaryView")
+
+	@FindBy(id = "menu_discipline_defaultDisciplinaryView")
 	WebElement disciplinaryMenu;
-	
-	@FindBy (id="menu_onlinetraining_OTM")
+
+	@FindBy(id = "menu_onlinetraining_OTM")
 	WebElement oTMenu;
-	
-	@FindBy (id="menu_onlinetraining_viewOnlineCourseEmployee")
+
+	@FindBy(id = "menu_onlinetraining_viewOnlineCourseEmployee")
 	WebElement myCOursesMenu;
-	
+
 	public MenuPage() {
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public void clickAdminMenu() {
 		click(adminMenu);
 	}
-	
+
 	public void clickJobMenu() {
 		click(jobMenu);
 	}
-	
 
+	public void clickJobTitleMenu() {
+		click(jobTitleMenu);
+	}
+
+	public void clickSalaryComponentMenu() {
+		click(salaryComponentMenu);
+	}
+
+	public void clickEmployeeStatusMenu() {
+		click(employmentStatusMenu);
+	}
+
+	public void clickJobCategoryMenu() {
+		click(jobCategoryMenu);
+	}
+
+	public void clickWorkShiftMenu() {
+		click(workShiftMenu);
+	}
+
+	public void clickQualificationMenu() {
+		click(qualificationsMenu);
+	}
+
+	public void clickSkillsMenu() {
+		click(skillsMenu);
+	}
+
+	public void clickEducationMenu() {
+		click(educationMenu);
+	}
+
+	public void clickPIMMenu() {
+		click(pIMMenu);
+	}
+
+	public void clickEmployeeListMenu() {
+		click(employeeList);
+	}
+
+	public void clickDisciplinaryMenu() {
+		click(disciplinaryMenu);
+	}
+
+	public void clickOTMMenu() {
+		click(oTMenu);
+	}
+
+	public void clickMyCoursesMenu() {
+		click(myCOursesMenu);
+	}
 
 }
 
-
-
+/**
+ * Refer to Document on which element to inspect
+ * 
+ * 
+ * 
+ */
 
 /**
-Refer to Document  on which element to inspect
-
-
-
-*/
-
-
-/**
-
-	Admin Menu
-		Job Menu
-			- Job Titles
-			- SalaryComponents
-			- Pay Grades
-			- Employment Status
-			- Job Categories
-			- Work Shifts
-		
-		Qualifications Menu
-			- Skills
-			- Education
-	PIM Menu
-		- Employee List
-
-	Discipline Menu
-		- Disciplinary Cases
-		
-	OTM Menu
-		- My Courses
-
-
-
-*/
+ * 
+ * Admin Menu Job Menu - Job Titles - SalaryComponents - Pay Grades - Employment
+ * Status - Job Categories - Work Shifts
+ * 
+ * Qualifications Menu - Skills - Education PIM Menu - Employee List
+ * 
+ * Discipline Menu - Disciplinary Cases
+ * 
+ * OTM Menu - My Courses
+ * 
+ * 
+ * 
+ */
