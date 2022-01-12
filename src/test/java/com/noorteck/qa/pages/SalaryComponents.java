@@ -7,6 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 import com.noorteck.qa.utils.CommonUI;
 
 public class SalaryComponents extends CommonUI {
+	@FindBy(xpath = "//li[text() = 'Salary Components']")
+	WebElement salaryComponentsTitle;
+	
 	@FindBy(xpath = "//th[text()='Component Name ']")
 	WebElement sortByComponentName;
 	
@@ -65,6 +68,9 @@ public class SalaryComponents extends CommonUI {
 		PageFactory.initElements(driver, this);
 	}
 	
+	public String salaryComponentsTitle() {
+		return getText(salaryComponentsTitle);
+	}
 	public void clickSortByComponentName() {
 		click(sortByComponentName);
 	}
