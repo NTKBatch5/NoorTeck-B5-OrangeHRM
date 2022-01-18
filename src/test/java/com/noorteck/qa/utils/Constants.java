@@ -2,6 +2,12 @@ package com.noorteck.qa.utils;
 
 import org.openqa.selenium.WebDriver;
 
+import com.noorteck.qa.pages.CommonElementPage;
+import com.noorteck.qa.pages.JobTitlesPage;
+import com.noorteck.qa.pages.LoginPage;
+import com.noorteck.qa.pages.MenuPage;
+import com.noorteck.qa.pages.SalaryComponentsPage;
+
 
 
 /**
@@ -15,7 +21,11 @@ public class Constants {
 	public static WebDriver driver;
 	
 	//declare class objects and common objects
-
+	public static LoginPage loginObj;
+	public static MenuPage menuObj;
+	public static JobTitlesPage jobTitlesObj;
+	public static CommonElementPage commonObj;
+	public static SalaryComponentsPage salCompObj;
 
 }
  

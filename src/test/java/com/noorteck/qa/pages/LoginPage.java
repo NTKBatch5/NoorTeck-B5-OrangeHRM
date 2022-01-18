@@ -1,18 +1,52 @@
 package com.noorteck.qa.pages;
 
-public class LoginPage {
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
+public class LoginPage extends CommonElementPage {
+
+	@FindBy(id = "txtUsername")
+	WebElement userNameField;
+
+	@FindBy(id = "txtPassword")
+	WebElement passwordField;
+
+	@FindBy(xpath = "//button[@type='submit']")
+	WebElement loginButton;
+	
+ 
+
+	public LoginPage() {
+		PageFactory.initElements(driver, this);
+	}
+
+
+	public void click(String element) {
+
+		switch (element) {
+		case "login.loginButton":
+			click(loginButton);
+			break;
+		}
+	}
+	
+	public void enter(String element, String value) {
+		switch (element) {
+		case "login.username":
+			enter(userNameField, value);
+			break;
+		case "login.password":
+			enter(passwordField, value);
+			break;
+
+		}
+	}
+	
+	
 }
 
 
-
  
-/**
-	Refer to Document  on which element to inspect
-
-
-
-*/
-
 
  

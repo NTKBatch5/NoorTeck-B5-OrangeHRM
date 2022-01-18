@@ -211,7 +211,7 @@ public class CommonUI extends ObjInitialize {
 	public static void enter(WebElement element, String value) {
 
 		if (isDisplayed(element)) {
-		//	element.clear();
+		 	element.clear();
 			element.sendKeys(value);
 		}
 
@@ -347,5 +347,14 @@ public class CommonUI extends ObjInitialize {
 		}
 	}
 
+	public static void sleep(int milliseconds)  {
+		
+		try {
+			Thread.sleep(milliseconds);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 }
